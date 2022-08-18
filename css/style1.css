@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+    height: 100vh;
+}
+.grid-container{
+    display: grid;  
+    grid-template-rows: 80px 400px 160px;
+}
+.grid-item{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one{
+    grid-column: 1/5;
+    background-color: #4e69e2;
+}
+.two{
+    grid-column:1/4 ;
+    background-color: blue;
+}
+.three{
+    background-color: rgb(8, 85, 157);
+}
+.four{
+    grid-column: 1/5;
+    background-color: rgb(43, 202, 226);
+}

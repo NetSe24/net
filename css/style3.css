@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas:
+    "nav main main main main"
+    "nav container container container container";
+    height: 100vh;
+}
+.title{
+    height: 11%;
+    background-color: #bcb60a;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #fff;
+}
+aside{
+    background-color: #ea7f94;
+    grid-area:nav;
+}
+nav{
+    background-color: #dccf11;
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+}
+.menubar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style-type:none;
+}
+i{
+    color: #fff;
+}
+.container{
+    background-color: #e4fbe4;
+    grid-area: container;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+form{
+    width: 30%;
+    height: 80%;
+    background-color: #cce1f3;
+    justify-content: center;
+    border-radius: 6px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin: 20px;
+    border-radius: 50%;   
+}
+.form-title,.form-group{
+    text-align: center;
+}
+input, button{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+button{
+    border: none;
+    margin-bottom: 20px;
+    width: 86%;
+    font-size: 17px;
+    background-color: #b8860b;
+    color: #fff;
+}
